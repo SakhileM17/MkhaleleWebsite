@@ -1,0 +1,952 @@
+/*-------------------------------------------------------------
+Website Name    : Helman Mkhalele Website 2024
+Author          : Sakhile Mkhalele
+Date            : Feb 2024
+
+CSS
+-------------------------------------------------------------- */
+
+:root {
+    --primary-color: #CFB53B;
+    --secondary-color:#92C1DB;
+}
+
+/* Helman Mkhalele Website headering colors*/
+h1, h2, h3, h4, h5 {
+
+    color: var(--primary-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+p {
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.gold_text {
+    color: #CFB53B;
+}
+
+/* Mobile devices */
+
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  p {
+    line-height: 35px;
+    font-size: 20px;
+}
+}
+
+
+
+/* Body */
+
+/* Animation */
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*---------------------------------
+Header 
+-----------------------------------*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 2s ease;
+}
+
+.img_logo {
+    height: 200px;
+    width: 150px;
+    padding: 20% 40%;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+.img_logo:hover {
+    height: 250px;
+    width: 170p;
+}
+
+/* Linked to js - when user scrolls the head background becomes white*/
+.header-transparent {
+    background-color: transparent; /* Set the initial transparent background color */
+}
+
+.header-white {
+    background-color: #ffffff; /* Set the background color when scrolled */
+}
+
+
+/* Reference Apple 12 Pro 390 width */
+@media only screen and (max-width: 500px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+.img_logo {
+  height: 150px;
+  width: 200px;
+  padding: 5% 0;
+  transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+}
+
+
+
+/*----------------------------------
+        Header End 
+-----------------------------------*/
+
+/*----------------------------------
+        Hero Container
+-----------------------------------*/
+
+#container {
+    width: 100%;
+}
+
+#container-header {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#container-header {
+  width: 100%;
+}
+
+
+}
+/*----------------------------------
+        Hero Container End
+-----------------------------------*/
+
+/*------ Hero Coach Helman Mkhalele ---------------*/
+
+/* Coach Helman Mkhalele Nav Menu */
+
+.nav-coach-hm  {
+    color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right: 3%;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    justify-content: center;
+    width: 60%;
+}
+
+
+
+.nav-coach-hm a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+  
+}
+
+.nav-coach-hm a:hover {
+    color:var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.nav-coach-hm a.active{
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+
+.submenu-hm {
+    display: none;
+    position: absolute;
+    top: calc(100% + 70%); /* Adjust the position of the submenu as needed */
+    left: 10%;
+    background-color: #ffffff65; /* Add your desired background color */
+    border-radius: 5%;
+    flex-direction: column; /* Arrange submenu items in a column */
+}
+
+
+#football:hover + .submenu-hm {
+    display: flex; /* Show submenu when hovering over the parent container */
+}
+
+.submenu-hm:hover {
+    display: flex;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    
+}
+
+/*social media icons*/
+.nav_menu_social_icons_container {
+    display: flex;
+    width: 30%;
+}
+
+.nav_menu_social_icons img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .menu-icon {
+    display: block;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+
+.menu-icon:active {
+    background-color: #F1F2F2;
+    width: 100%;
+  
+}
+
+.img_hamburger {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto; /* Center the image horizontally */
+    padding-top:10px ;
+    
+}
+
+
+nav {
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */ 
+    width: 100%;
+    
+}
+
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 150px;
+    text-align: right;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: center;
+    border-bottom : 2px solid transparent;
+    
+}
+
+.menu-links a {
+    display: block;
+    text-align: left;
+    padding: 10%; /* Adjust padding as needed */
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+    background-color: rgb(235, 235, 235);
+    font-size: 20px;
+
+}
+
+.menu-links a:active {
+    color:var(--primary-color);
+}
+
+.menu-links a:hover {
+    background-color: #555; /* Change the background color on hover */
+    
+    
+}
+
+.menu-links.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-coach-hm  {
+  color: black;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-bottom : 1px solid transparent;
+  animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+  justify-content: center;
+  width: 10%;
+  right:  10%;
+}
+
+.nav_menu_social_icons_container {
+  display: none;
+}
+}
+
+/*Header*/
+
+/* Introduction text */
+
+.Intro-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Intro-text-container h1{
+    text-align: center;
+    padding: 0 10%;
+}
+
+.Intro-text-container p{
+    text-align: center;
+    padding: 0 10%;
+}
+
+/*Introduction stats */
+
+.intro-stats-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.intro-stats-text-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+
+.intro-stats {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    padding: 2%;
+    justify-content: space-between;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+  .intro-stats h2{
+    font-size: 20px;
+}
+
+.intro-stats p{
+  font-size: 8px;
+}
+
+.intro-stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.intro-stats-text-container {
+display: flex;
+justify-content: space-evenly;
+
+}
+
+  
+}
+
+/* club emblems*/
+
+.intro-emblems-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #cfb43b4d;
+}
+
+.intro-emblems-row  {
+  
+  display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+
+}
+
+
+
+.emblems {
+    width: 100px;
+    height: 100px;
+    padding: 1%;
+    margin: auto;
+    transition: all 0.4s ease; /* Add smooth transition to all properties */
+}
+
+.emblems:hover {
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20%;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .intro-emblems-container {
+    overflow: hidden;
+  }
+
+  .intro-emblems-row {
+    
+    display: flex;
+    transition: all 0.4s ease; /* Add smooth transition to all properties */
+    animation: scroll 20s linear infinite;
+    align-items: center;
+  
+  
+  }
+
+  .emblems {
+    
+    width: 70px;
+    height: 70px;
+    padding: 5%;
+    margin: auto;
+    transition: all 0.4s ease; /* Add smooth transition to all properties */
+
+}
+
+
+}
+
+
+/*-------------- Mkhalele Accocaldes Article     ---------------------*/
+
+/*Accolades section*/
+
+.hm_accolades-container {
+    display: flex;  
+    width: 100%;
+}
+
+.hm_accolades_images_container {
+    display: flex;
+    width: 45%;
+    height: 400px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 10%;
+}
+
+.hm_accolades_left_images img{
+    height: 400px;
+    width: 300px;
+}
+
+.hm_accolades_right_images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hm_accolades_right_images img{
+    height: 200px;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+
+
+.hm_accolades_text_container {
+    padding: 1% 0;
+    width: 80%;
+}
+
+.hm_accolades-paragraph {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.hm_accolades-paragraph p {
+  padding: 0 10%;
+}
+
+.hm_coaching_images_container {
+    display: block;
+    overflow: hidden;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+}
+
+.hm_coaching_images_row {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    align-items: center;
+    
+}
+
+.hm_coaching_images_row img{
+    
+    margin: 0 1%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%); /* Move the logos by the width of the container */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .hm_accolades_images_container {
+    display: flex;
+    width: 90%;
+    height: 400px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 1%;
+}
+
+
+
+  .hm_accolades_left_images img{
+    height: 400px;
+    width: 150px;
+}
+
+.hm_accolades_right_images {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.hm_accolades_right_images img{
+  height: 200px;
+  width: 180px;
+  transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+  .hm_accolades-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.hm_accolades_text_container {
+  margin: 0 auto;
+  padding: 1% 0;
+  width: 90%;
+
+}
+
+
+
+
+
+  
+
+}
+
+
+/*------------------------- Player & Coaching Career Timeline -----------------------------------*/
+
+  
+  
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  
+    
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid var(--primary-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+  }
+
+  .left:hover {
+    left: 2%;
+  }
+  
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+  }
+
+  .right:hover {
+    left:48%;
+  }
+
+
+  
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--primary-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--primary-color);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--primary-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: rgba(218, 218, 218, 0.248);
+    position: relative;
+    border-radius: 6px;
+  }
+
+  .player_timeline_emblems  {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .player_timeline_emblems img {
+    width: 15%;
+  }
+
+@media only screen and (max-width: 600px) {
+
+    /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80%; /* Adjust width for mobile */
+  box-sizing: border-box;
+  display: flex; /* Arrange items in a row */
+  justify-content: space-between; /* Space items evenly */
+
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -17px;
+  background-color: white;
+  border: 4px solid var(--primary-color);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  
+}
+
+
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 20px;
+  border: medium solid var(--primary-color);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: rgba(218, 218, 218, 0.248);
+  position: relative;
+  border-radius: 6px;
+  width: calc(100% - 45px); /* Adjust width to fit within the container */
+}
+
+/* Place the container to the left */
+.left {
+  left: 10%;
+  transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+
+/* Place the container to the right */
+.right {
+  left: 10%;
+  transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--primary-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--primary-color) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -10px;
+}
+
+
+
+
+    .player_timeline_emblems img {
+      width: 80px;
+      height: 80px;
+      padding: 1% 5%;
+    }
+  
+
+  }
+
+ 
+
+
+  /*------- footer ----------*/
+
+  .footer_logo_image_container {
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+
+  .footer_logo_image {
+    width: 7%;
+    height: 7%;
+    padding: 1%;
+  }
+
+  .footer_logo_nav_container {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--primary-color);
+    
+  }
+
+  .footer_logo_nav_container nav {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    
+  }
+
+  .footer_logo_icon_container {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer_logo_icon_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+  }
+
+
+  .footer_icon_image {
+    width: 10%;
+    padding: 5%;
+  }
+
+  .footer_logo_links  {
+    
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .footer_logo_links a {
+
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #CFB53B;
+    
+  }
+
+  .footer-copyright a{
+    color: white;
+  }
+
+  .footer-copyright p {
+    font-size: 15px;
+  }
+
+  @media only screen and (max-width:600px) {
+
+    .footer_icon_image {
+      width: 30%;
+      padding: 5%;
+    }
+
+    .footer_logo_image {
+      width: 15%;
+      height: 15%;
+      padding: 4%;
+    }
+
+  }
+

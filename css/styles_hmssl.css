@@ -1,0 +1,621 @@
+/*-------------------------------------------------------------
+Website Name    : Helman Mkhalele Website 2024
+Author          : Sakhile Mkhalele
+Date            : Feb 2024
+
+CSS
+-------------------------------------------------------------- */
+
+:root {
+    --secondary-color:#92C1DB;
+}
+
+/* Helman Mkhalele Website headering colors*/
+h1, h2, h3, h4, h5 {
+    color: var(--secondary-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* Mobile devices */
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    h2 {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  
+    p {
+      line-height: 35px;
+      font-size: 20px;
+  }
+  }
+  
+
+/* Body */
+
+
+/*---------------------------------
+Header 
+-----------------------------------*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 2s ease;
+
+}
+
+.img_logo {
+    height: 200px;
+    width: 150px;
+    padding: 20% 40%;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+.img_logo:hover {
+    height: 250px;
+    width: 170p;
+}
+
+/* Reference Apple 12 Pro 390 width */
+@media only screen and (max-width: 500px) {
+
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+  .img_logo {
+    height: 150px;
+    width: 200px;
+    padding: 5% 0;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+  }
+  
+  }
+
+/* Linked to js - when user scrolls the head background becomes white*/
+.header-transparent {
+    background-color: transparent; /* Set the initial transparent background color */
+}
+
+.header-white {
+    background-color: #ffffff; /* Set the background color when scrolled */
+}
+
+@media only screen and (max-width: 600px) {
+  
+    #container {
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  #container-header {
+    width: 100%;
+  }
+  
+  
+  }
+
+
+/*----------------------------------
+        Header End 
+-----------------------------------*/
+
+/*----------------------------------
+        Hero Container
+-----------------------------------*/
+
+#container-hero {
+    width: 100%;
+    overflow: hidden;
+    background-color: bisque;
+}
+
+
+.hero {
+    width: 100%;
+}
+
+
+/*----------------------------------
+        Hero Container End
+-----------------------------------*/
+
+/*------ Hero Coach Helman Mkhalele ---------------*/
+
+
+/*social media icons*/
+.nav_menu_social_icons_container {
+    display: flex;
+    width: 30%;
+}
+
+.nav_menu_social_icons img{
+    width: 100%;
+}
+
+
+
+
+/* ----- Hero HMSSL --------------- */
+
+/* hmssl Nav Menu */
+
+.nav-hmssl  {
+    color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right: 5%;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    justify-content: center;
+
+}
+
+
+
+.nav-hmssl a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-bottom : 3px solid transparent;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+.nav-hmssl a:hover {
+    color:var(--secondary-color);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.nav-hmssl a.active{
+    color: var(--secondary-color);
+    font-weight: bold;
+    width: 10px;
+}
+
+
+
+.submenu-hmssl {
+    display: none;
+    position: absolute;
+    top: calc(100% + 50%); /* Adjust the position of the submenu as needed */
+    left: 10%;
+    background-color: white; /* Add your desired background color */
+    border-radius: 5%;
+    padding: 1%;
+    flex-direction: column; /* Arrange submenu items in a column */
+}
+
+
+#football:hover + .submenu-hmssl {
+    display: flex; /* Show submenu when hovering over the parent container */
+}
+
+.submenu-hmssl:hover {
+    display: flex;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu-icon {
+        display: block;
+        margin-right: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        
+    }
+    
+    .menu-icon:active {
+        background-color: #F1F2F2;
+      
+    }
+    
+    .img_hamburger {
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin: auto; /* Center the image horizontally */
+        padding-top:10px ;
+        
+    }
+    
+    
+    nav {
+        
+        display: flex;
+        align-items: center;
+        position: relative;
+        animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */ 
+        width: 100%;
+        
+    }
+    
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 150px;
+        text-align: right;
+        background-color: rgb(235, 235, 235);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        text-align: center;
+        border-bottom : 2px solid transparent;
+        
+    }
+    
+    .menu-links a {
+        display: block;
+        text-align: left;
+        padding: 10%; /* Adjust padding as needed */
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.3s; /* Add a smooth transition effect */
+        background-color: rgb(235, 235, 235);
+        font-size: 20px;
+    
+    }
+    
+    .menu-links a:active {
+        color:var(--primary-color);
+    }
+    
+    .menu-links a:hover {
+        background-color: #555; /* Change the background color on hover */
+        
+        
+    }
+    
+    .menu-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-coach-hm  {
+      color: black;
+      display: flex;
+      position: relative;
+      align-items: center;
+      border-bottom : 1px solid transparent;
+      animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+      justify-content: center;
+      width: 10%;
+      right:  10%;
+    }
+    
+    .nav_menu_social_icons_container {
+      display: none;
+    }
+
+    
+}
+
+
+/* Introduction*/
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 5% 1%;
+}
+
+.intro-video-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 5% 0;
+    align-items: center;
+    
+}
+
+.intro_video {
+    width: 500px; 
+    height: 350px;
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+.intro_video:hover {
+    width: 600px; 
+    height: 450px;
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Add smooth transition to all properties */
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+         
+}
+
+@media only screen and (max-width: 600px) {
+
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .intro_video {
+        width: 300px; 
+        height: 350px;
+        border-radius: 20px;
+        transition: all 0.3s ease; /* Add smooth transition to all properties */
+    }
+    
+    .intro-video-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 5% 0;
+        align-items: center;
+        
+    }
+
+    .intro-text-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        padding: 5% 1%;
+        margin: 0 auto;
+    }
+
+    .hmssl-over-stats h2{
+        font-size: 20px;
+        margin: 5%;
+    }
+    
+    
+
+}
+
+/* HMSSL Stats Over view  */
+
+.hmssl-overview-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.hmssl-overview-text-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    text-align: center;
+    padding: 0 1%;
+}
+
+.hmssl-over-stats {
+    
+    margin: 5%;
+}
+
+
+
+/*---------------- league divisiosn  --------------------*/
+
+.hmssl-league-division-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.hmssl-league-division-text-container {
+    text-align: center;
+    width: 70%;
+}
+
+.hmssl-images-row {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.hmssl-images {
+    width: 30%;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 600px) { 
+
+    .hmssl-images {
+        width: 35%;
+        padding: 1%;
+    }
+    
+    .footer_icon_image {
+        width: 100%;
+        padding: 5%;
+        
+      }
+
+      .footer_logo_links a, .footer_logo_links img{
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        
+      }
+
+      .hmssl-league-division-image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+
+        
+    }
+
+      
+      .hmssl-images-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 30%;
+        padding-bottom: 10%;
+        padding-top: 5%;
+        border-color: darkgreen;
+    
+    }
+    
+
+}
+
+
+
+/*------- footer ----------*/
+
+@media only screen and (max-width: 600px) { 
+
+    .footer_logo_image_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+      }
+
+      .footer_logo_image_container img {
+        
+        width: 20%;
+    
+      }
+
+
+    
+    
+
+}
+
+.footer_logo_image_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer_logo_image {
+    width: 7%;
+    height: 7%;
+    padding: 1%;
+  }
+
+  .footer_logo_nav_container {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid var(--secondary-color);
+    
+  }
+
+  .footer_logo_nav_container nav {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    
+  }
+
+  .footer_logo_icon_container {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer_logo_icon_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+
+  .footer_icon_image {
+    width: 10%;
+    padding: 5%;
+  }
+
+  .footer_logo_links  {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .footer_logo_links a {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    
+  }
+
+  .footer-copyright a{
+    color: white;
+  }
+
+  .footer-copyright p {
+    font-size: 15px;
+  }
+
+/* Body Ends */
+
+

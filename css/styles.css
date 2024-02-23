@@ -1,0 +1,1494 @@
+/*-------------------------------------------------------------
+Website Name    : Helman Mkhalele Website 2024
+Author          : Sakhile Mkhalele
+Date            : Feb 2024
+
+CSS
+-------------------------------------------------------------- */
+
+:root {
+    --primary-color: #CFB53B;
+    --secondary-color:#92C1DB;
+}
+
+/* Helman Mkhalele Website headering colors*/
+h1, h2, h3, h4, h5 {
+    color: var(--primary-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+p {
+    line-height: 30px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+/* Body */
+
+/* Animation */
+
+@keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Mobile devices */
+
+@media only screen and (max-width: 500px) {
+
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  
+    h2 {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  
+    p {
+      line-height: 35px;
+      font-size: 20px;
+  }
+  }
+
+  @media only screen and (min-width: 501px) and (max-width: 900px) {
+    /* Your laptop styles here */
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    
+      h2 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    
+      p {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    
+}
+
+
+
+/*---------------------------------
+Header 
+-----------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Adjust the z-index as needed */
+    transition: background-color 2s ease;
+}
+
+.img_logo {
+    height: 200px;
+    width: 150px;
+    padding: 20% 40%;
+}
+
+
+.header-transparent {
+    background-color: transparent; /* Set the initial transparent background color */
+}
+
+.header-white {
+    background-color: #ffffff; /* Set the background color when scrolled */
+}
+
+/* Reference Apple 12 Pro 390 width */
+@media only screen and (max-width: 500px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+.img_logo {
+  height: 150px;
+  width: 150px;
+  padding: 5% 1%;
+  transition: all 0.3s ease; /* Add smooth transition to all properties */
+}
+
+}
+/*----------------------------------
+        Header End 
+-----------------------------------*/
+
+/*----------------------------------
+        Hero Container
+-----------------------------------*/
+
+#container-hero {
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+
+.hero {
+    width: 100%;
+}
+
+
+/*----------------------------------
+        Hero Container End
+-----------------------------------*/
+
+/*------ Hero Coach Helman Mkhalele ---------------*/
+
+/* Coach Helman Mkhalele Nav Menu */
+
+/* Helman Mkhalele - Midnight Express Nav Menu */
+
+.nav-coach-hm  {
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+}
+
+
+
+.nav-coach-hm a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 30px;
+
+}
+
+.nav-coach-hm a:hover {
+    color:var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+
+.nav-coach-hm a.active{
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    
+}
+
+/*social media icons*/
+.nav_menu_social_icons_container {
+    display: flex;
+    width: 30%;
+}
+
+.nav_menu_social_icons img{
+    width: 100%;
+}
+/* Hero Section - Coach Helman Mkhalele */
+
+
+
+/*------ end of hm hero*/
+
+/*------ Hero Helman Mkhalele - midnight express ---------------*/
+
+
+/* Hero Section - Helman Mkhalele Midnight Express*/
+
+.hero-hm-midnight {
+    width: 100%;
+    background-color: black;
+    animation: fadeInFromLeft 2s ease-in-out forwards;
+}
+
+
+
+
+
+/* ----- Hero HMSSL --------------- */
+
+/* hmssl Nav Menu */
+
+.nav-hmssl  {
+    color: black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right: 5%;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    justify-content: center;
+}
+
+
+
+.nav-hmssl a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-bottom : 3px solid transparent;
+}
+
+.nav-hmssl a:hover {
+    color:var(--secondary-color);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.nav-hmssl a.active{
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+
+.submenu-hmssl {
+    display: none;
+    position: absolute;
+    top: calc(100% + 50%); /* Adjust the position of the submenu as needed */
+    left: 10%;
+    background-color: white; /* Add your desired background color */
+    border-radius: 5%;
+    padding: 1%;
+    flex-direction: column; /* Arrange submenu items in a column */
+}
+
+
+#football:hover + .submenu-hmssl {
+    display: flex; /* Show submenu when hovering over the parent container */
+}
+
+.submenu-hmssl:hover {
+    display: flex;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+
+/*  Hero section - hmssl */
+
+.hero-hmssl {
+    width: 100%;
+    background-color: white;
+    animation: fadeInFromLeft 2s ease-in-out forwards;
+}
+
+.hero-img-hmssl {
+    width: 100%;
+    position: relative;
+    
+}
+
+.hero-hmssl-text-container {
+    position: absolute;
+    width: 50%;
+    top: 80%;
+    left: 10%;
+    line-height: 30px;
+    color: black    ;
+    align-items: center;
+    
+}
+
+.hero-coach-hmssl-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-coach-hmssl-icon img {
+    display: flex;
+    height: 10%;
+    width: 10%;
+    padding: 5%;
+    margin: auto;
+    align-items: center;
+}
+
+.hero-coach-hmssl-text {
+
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-hmssl-text-container h1 {
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+.hero-hmssl-text-container a{
+    color:var(--secondary-color);
+}
+
+.hero-hmssl-text-container a:hover{
+    color:grey;
+}
+
+
+
+/*Hero*/
+
+
+
+    /* Hero Section - Coach Helman Mkhalele */
+
+
+.hero-img-hmssl  {
+    width: 100%;
+    position: relative;
+    
+  }
+/* hmssl*/
+
+.hero-hmssl-text-container {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 15%;
+    line-height: 30px;
+    color: white;
+    align-items: center;
+    
+}
+
+.hero-hmssl-text-container h3 {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+.hero-coach-hmssl-text p{
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+
+.hero-coach-hm-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-coach-hm-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-coach-hm-icon img {
+    display: flex;
+    height: 10%;
+    width: 10%;
+    padding: 5%;
+    margin: auto;
+    align-items: center;
+}
+
+.hero-coach-hm-text {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-coach-hm-text p{
+    font-size: 20px;
+    
+}
+
+.hero-coach-hm-text-container h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+.hero-coach-hm-text-container a{
+    color:var(--primary-color);
+
+}
+
+.hero-coach-hm-text-container a:hover{
+    font-weight: bold;
+}
+
+/*hmssl end*/
+
+.hero-coach-hm-text {
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-coach-hm-text-container h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.hero-coach-hm-text-container p {
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+
+
+.hero-coach-hm-text-container a{
+    color:var(--primary-color);
+    font-size: 10pz;
+}
+
+.hero-coach-hm-text-container a:hover{
+    font-weight: bold;
+}
+
+
+
+  /*hero*/
+
+  /* Hero Section - Coach Helman Mkhalele */
+
+.hero-hm {
+  width: 100%;
+  background-color: black;
+  animation: fadeInFromLeft 2s ease-in-out forwards;
+  
+}
+
+/* Hero Image*/
+
+.hero-img-coach-helman-mkhalele {
+  width: 100%;
+  position: relative;
+  
+}
+
+
+.hero-coach-hm-text-container {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 10%;
+    line-height: 30px;
+    color: white;
+    align-items: center;
+    
+}
+
+.hero-coach-hm-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-coach-hm-icon img {
+    display: flex;
+    height: 10%;
+    width: 10%;
+    padding: 5%;
+    margin: auto;
+    align-items: center;
+}
+
+.hero-coach-hm-text {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hero-coach-hm-text p{
+    font-size: 20px;
+    
+}
+
+.hero-coach-hm-text-container h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+.hero-coach-hm-text-container a{
+    color:var(--primary-color);
+
+}
+
+.hero-coach-hm-text-container a:hover{
+    font-weight: bold;
+}
+
+
+
+/*------ Hero end of hm - modnight express */
+
+
+/*-------- Pagination -----------*/
+
+.pagination {
+
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    top: 120%;
+    width: 4   0%;
+    left: 15%;
+    z-index: 1;
+    /* Additional styling for pagination */
+
+}
+
+
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out; /* Add transition effect */
+}
+
+.active-dot {
+    background-color: #CFB53B;
+}
+
+.slide {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-active {
+    display: block;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+/* Helman Mkhalele - Midnight Express Nav Menu */
+
+.nav-coach-hm  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 5%;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    
+}
+
+
+
+.nav-coach-hm a {
+    
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    text-decoration: none;
+    padding: 1%;
+
+}
+
+.nav-coach-hm a:hover {
+    color:var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+
+.nav-coach-hm a.active{
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+
+    
+    
+}
+
+
+
+/* hmssl nav*/
+
+.nav-hmssl  {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 5%;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    
+}
+
+
+
+.nav-hmssl a {
+    
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    text-decoration: none;
+    padding: 1%;
+
+}
+
+.nav-hmssl a:hover {
+    color:var(--s4);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+
+.nav-hmssl a.active{
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+
+    /* Hero Coach Hm*/
+
+    .hero-hm {
+        width: 100%;
+        background-color: black;
+        animation: fadeInFromLeft 2s ease-in-out forwards;
+        
+    }
+    
+    .hero-img-coach-helman-mkhalele {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        
+    }
+    
+    .hero-coach-hm-text-container {
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        line-height: 30px;
+        color: white;
+        align-items: center;
+        
+    }
+    
+    
+    .hero-coach-hm-icon img {
+        display: none;
+    }
+
+    .hero-coach-hmssl-icon img{
+        display: none;
+    }
+    
+    .hero-coach-hm-text {
+    
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .hero-coach-hm-text p{
+
+        font-size: 15px;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .hero-coach-hm-text-container h1 {
+        color: white;
+        font-size: 20px;
+        font-weight:700;
+    }
+    
+    
+    .hero-coach-hm-text-container a{
+        color:var(--primary-color);
+    }
+    
+    .hero-coach-hm-text-container a:hover{
+        font-weight: bold;
+    }
+
+    .nav_menu_social_icons_container {
+        display: none;
+    }
+     
+    /*HMSSL */
+
+    .hero-hmssl {
+        width: 100%;
+        background-color: white;
+        animation: fadeInFromLeft 2s ease-in-out forwards;
+        
+    }
+    
+    .hero-img-hmssl {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        
+    }
+    
+    .hero-hmssl-text-container {
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        line-height: 30px;
+        color: white;
+        align-items: center;
+        
+    }
+
+    .hero-hmssl-text-container p {
+        font-size: 15px;
+        line-height: 30px;
+        
+    }
+
+    .hero-hmssl-text-container h3 {
+        font-size: 20px;
+        
+    }
+    
+    
+    .hero-coach-hm-icon img {
+        display: none;
+    }
+
+    .hero-coach-hmssl-icon img{
+        display: none;
+    }
+    
+    .hero-coach-hm-text {
+    
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .hero-coach-hm-text p{
+
+        font-size: 15px;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .hero-coach-hm-text-container h1 {
+        color: white;
+        font-size: 20px;
+        font-weight:700;
+    }
+    
+    
+    .hero-coach-hm-text-container a{
+        color:var(--primary-color);
+    }
+    
+    .hero-coach-hm-text-container a:hover{
+        font-weight: bold;
+    }
+
+    .nav_menu_social_icons_container {
+        display: none;
+    }
+
+    .hmssl-menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 150px;
+        text-align: right;
+        background-color: rgb(235, 235, 235);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        text-align: center;
+        border-bottom : 2px solid transparent;
+        
+    }
+    
+    .hmssl-menu-links a {
+        display: block;
+        text-align: left;
+        padding: 10%; /* Adjust padding as needed */
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.3s; /* Add a smooth transition effect */
+        background-color: rgb(235, 235, 235);
+        font-size: 20px;
+    
+    }
+    
+    .hmssl-menu-links a:active {
+        color:var(--primary-color);
+    }
+    
+    .hmssl-menu-links a:hover {
+        background-color: #555; /* Change the background color on hover */
+        
+        
+    }
+    
+    .hmssl-menu-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+
+    /* Helman Mkhalele - Midnight Express Nav Menu */
+
+.nav-coach-hm  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    
+}
+
+
+
+.nav-coach-hm a {
+    
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    text-decoration: none;
+    padding: 1%;
+
+}
+
+.nav-coach-hm a:hover {
+    color:var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+
+.nav-coach-hm a.active{
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+
+/* hmssl nav*/
+
+.nav-hmssl  {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom : 1px solid transparent;
+    animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+    
+}
+
+
+
+.nav-hmssl a {
+    
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    text-decoration: none;
+    padding: 1%;
+
+}
+
+.nav-hmssl a:hover {
+    color:var(--s4);
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+
+
+.nav-hmssl a.active{
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-bottom-color: var(--primary-color);
+    width: 10px;
+}
+
+
+
+    /* Hero Coach Hm*/
+
+    .hero-hm {
+        width: 100%;
+        background-color: black;
+        animation: fadeInFromLeft 2s ease-in-out forwards;
+        
+    }
+    
+    .hero-img-coach-helman-mkhalele {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        
+    }
+    
+    .hero-coach-hm-text-container {
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        line-height: 30px;
+        color: white;
+        align-items: center;
+        
+    }
+    
+    
+    .hero-coach-hm-icon img {
+        display: none;
+    }
+
+    .hero-coach-hmssl-icon img{
+        display: none;
+    }
+    
+    .hero-coach-hm-text {
+    
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .hero-coach-hm-text p{
+
+        font-size: 25px;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .hero-coach-hm-text-container h1 {
+        color: white;
+        font-size: 30px;
+        font-weight:700;
+    }
+    
+    
+    .hero-coach-hm-text-container a{
+        color:var(--primary-color);
+    }
+    
+    .hero-coach-hm-text-container a:hover{
+        font-weight: bold;
+    }
+
+    .nav_menu_social_icons_container {
+        display: none;
+    }
+     
+    /*HMSSL */
+
+    .hero-hmssl {
+        width: 100%;
+        background-color: white;
+        animation: fadeInFromLeft 2s ease-in-out forwards;
+        
+    }
+    
+    .hero-img-hmssl {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        
+    }
+    
+    .hero-hmssl-text-container {
+        position: absolute;
+        width: 80%;
+        top: 35%;
+        left: 10%;
+        line-height: 30px;
+        color: white;
+        align-items: center;
+        
+    }
+
+    .hero-hmssl-text-container p {
+        font-size: 30px;
+        line-height: 40px;
+        
+    }
+
+    .hero-hmssl-text-container h3 {
+        font-size: 40px;
+        
+    }
+    
+    
+    .hero-coach-hm-icon img {
+        display: none;
+    }
+
+    .hero-coach-hmssl-icon img{
+        display: none;
+    }
+    
+    .hero-coach-hm-text {
+    
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .hero-coach-hm-text p{
+        line-height: 40px;
+        font-size: 30px;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .hero-coach-hm-text-container h1 {
+        color: white;
+        font-size: 40px;
+        font-weight:700;
+    }
+    
+    
+    .hero-coach-hm-text-container a{
+        color:var(--primary-color);
+    }
+    
+    .hero-coach-hm-text-container a:hover{
+        font-weight: bold;
+    }
+
+    .nav_menu_social_icons_container {
+        display: none;
+    }
+
+    .hmssl-menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 150px;
+        text-align: right;
+        background-color: rgb(235, 235, 235);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        text-align: center;
+        border-bottom : 2px solid transparent;
+        
+    }
+    
+    .hmssl-menu-links a {
+        display: block;
+        text-align: left;
+        padding: 10%; /* Adjust padding as needed */
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.3s; /* Add a smooth transition effect */
+        background-color: rgb(235, 235, 235);
+        font-size: 20px;
+    
+    }
+    
+    .hmssl-menu-links a:active {
+        color:var(--primary-color);
+    }
+    
+    .hmssl-menu-links a:hover {
+        background-color: #555; /* Change the background color on hover */
+        
+        
+    }
+    
+    .hmssl-menu-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+
+    .pagination {
+
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        top: 95%;
+        width: 10% 0%;
+        left: 10%;
+        z-index: 1;
+        /* Additional styling for pagination */
+    
+    }
+    
+    
+    
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: lightgray;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        transition: background-color 0.3s ease-in-out; /* Add transition effect */
+    }
+    
+    .active-dot {
+        background-color: #CFB53B;
+    }
+    
+    .slide {
+        display: none;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .slide-active {
+        display: block;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /*---------- Mobile Optimization  ---------------*/
+
+    .menu-icon {
+        display: block;
+        margin-right: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        
+    }
+    
+    .menu-icon:active {
+        background-color: #F1F2F2;
+        width: 100%;
+      
+    }
+    
+    .img_hamburger {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto; /* Center the image horizontally */
+        padding-top:10px ;
+        
+    }
+    
+    
+    nav {
+        
+        display: flex;
+        align-items: center;
+        position: relative;
+        animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */ 
+        width: 100%;
+        
+    }
+    
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 150px;
+        text-align: right;
+        background-color: rgb(235, 235, 235);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        text-align: center;
+        border-bottom : 2px solid transparent;
+        
+    }
+    
+    .menu-links a {
+        display: block;
+        text-align: left;
+        padding: 10%; /* Adjust padding as needed */
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.3s; /* Add a smooth transition effect */
+        background-color: rgb(235, 235, 235);
+        font-size: 20px;
+    
+    }
+    
+    .menu-links a:active {
+        color:var(--primary-color);
+    }
+    
+    .menu-links a:hover {
+        background-color: #555; /* Change the background color on hover */
+        
+        
+    }
+    
+    .menu-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-coach-hm  {
+      color: black;
+      display: flex;
+      position: relative;
+      align-items: center;
+      border-bottom : 1px solid transparent;
+      animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+      justify-content: center;
+      width: 10%;
+      right:  10%;
+    }
+    
+    .nav_menu_social_icons_container {
+      display: none;
+    }
+
+
+}
+
+/* PAginations */
+@media only screen and (max-width: 500px) {
+
+    .pagination {
+
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        top: 95%;
+        width: 10% 0%;
+        left: 10%;
+        z-index: 1;
+        /* Additional styling for pagination */
+    
+    }
+    
+    
+    
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: lightgray;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        transition: background-color 0.3s ease-in-out; /* Add transition effect */
+    }
+    
+    .active-dot {
+        background-color: #CFB53B;
+    }
+    
+    .slide {
+        display: none;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .slide-active {
+        display: block;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /*---------- Mobile Optimization  ---------------*/
+
+    .menu-icon {
+        display: block;
+        margin-right: 5px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        
+    }
+    
+    .menu-icon:active {
+        background-color: #F1F2F2;
+        width: 100%;
+      
+    }
+    
+    .img_hamburger {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto; /* Center the image horizontally */
+        padding-top:10px ;
+        
+    }
+    
+    
+    nav {
+        
+        display: flex;
+        align-items: center;
+        position: relative;
+        animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */ 
+        width: 100%;
+        
+    }
+    
+    .menu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        width: 150px;
+        text-align: right;
+        background-color: rgb(235, 235, 235);
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        text-align: center;
+        border-bottom : 2px solid transparent;
+        
+    }
+    
+    .menu-links a {
+        display: block;
+        text-align: left;
+        padding: 10%; /* Adjust padding as needed */
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.3s; /* Add a smooth transition effect */
+        background-color: rgb(235, 235, 235);
+        font-size: 20px;
+    
+    }
+    
+    .menu-links a:active {
+        color:var(--primary-color);
+    }
+    
+    .menu-links a:hover {
+        background-color: #555; /* Change the background color on hover */
+        
+        
+    }
+    
+    .menu-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-coach-hm  {
+      color: black;
+      display: flex;
+      position: relative;
+      align-items: center;
+      border-bottom : 1px solid transparent;
+      animation: fadeInFromRightLogo 2s ease-in-out forwards; /* Adjust the duration and easing function as needed */
+      justify-content: center;
+      width: 10%;
+      right:  10%;
+    }
+    
+    .nav_menu_social_icons_container {
+      display: none;
+    }
+
+    
+    }
+
+
+/* Body Ends */
+
+
