@@ -1,4 +1,6 @@
 <h1>Coach Helman Mkhalele Website</h1>
+
+<p><a src="https://sakhilem17.github.io/MkhaleleWebsite/">Visit Website</a></p>
 <p>Welcome to the official Coach Helman Mkhalele website. This website was deisgned so that users can get access to exclusive Coach Helman Mkhalele 
   content such as latest news, behind the scenes content, exclusive content of his legendary career as a professional football 
   player and exclusive content of his coaching career
